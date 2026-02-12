@@ -1,10 +1,7 @@
 # CS121_project_6
 (lab) file IO
 
-# File Input/Output
-```
-
-## Psuedocode
+# File IO Pseudocode
 
 ```
 
