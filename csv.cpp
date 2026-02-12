@@ -6,41 +6,47 @@ int main(){
 	std::ifstream inFile;
 	std::string currentLine;
 	std::stringstream converter;
-	std::stringstream num1;
-	std::stringstream num2;
-	int counter;
-	std::string sCounter;
+	std::string sNum1;
+	std::string sNum2;
+	int sum;
+	int num1;
+	int num2;
 	std::string text;
 
 	inFile.open("data.csv");
 	while (getline(inFile, currentLine)){
-
-		ss.clear();
-		ss.str("");
-		converter.clear();
-		converter.str("")
 		
-		ss.str(currentLine);
+                converter.clear();
 
-		getline(num1, sCounter, ',');
-		getline(num2, sCounter, ',');
+		converter.str(currentLine);
 
-		getline(num1, text);
-		getline(num2, text);
+		getline(converter, sNum1, ',');
+		getline(converter, sNum2, ',');
 
-		converter << sNum1 << " " << sNum2;
+		getline(converter, text);
 
-		converter >> num1 >> num2;
+		converter.clear();
+		converter.str(sNum1);
+		converter >> num1;
 
-		add num1 and num2
+		converter.clear();
+		converter.str(sNum2);
+		converter >> num2;
 
-		for (){
+		sum = num1 + num2;
 
+		for (int i = 0; i < sum; i++){
+			std::cout << text;
 		} // end for
+		std::cout << std::endl; 
 
-	return 0;
+                converter.clear();
+                converter.str("");
+
+	} // end while
+	
+	inFile.close();
 
 } // end main
-
 
 
