@@ -19,7 +19,7 @@ int main()
     
     open data.csv file;
 
-    while loop for getline data.csv and putting it on the currentline
+    while loop (getline(data.csv, putting it on the currentline)){
     
         clear stringstream converter;
         convert string in the currentline;
