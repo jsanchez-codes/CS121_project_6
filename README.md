@@ -7,39 +7,54 @@
 
 ```
 int main()
-    ifstream open file;
-    open data.csv
-    call function to open file
-    create string text
-    create variables for text to store data
-    int counter
+    input file declare name;
+    create a string called currentline;
+    create a stringstream for converting data;
+    create a string for the first number in the line of data;
+    create a string for the second number in the line of data;
+    create an integer for the sum;
+    create an integer for the first number;
+    create an integer for the second number;
+    create a string for the text in the line of data;
+    
+    open data.csv file;
 
     while loop for getline data.csv and putting it on the currentline
     
-        clear the stringstreams
+        clear stringstream converter;
+        convert string in the currentline;
         
-        load variables into ss stream
-
-        read line to stringstream
+        call getline to read first variable with comma delimiter;
+        call getline to read second variable with comma delimiter;
+        
+        call getline to read third variable
 
         call getline to read first variable with comma delimiter
         call getline to read second variable with comma delimiter
         
-        call getline to read text
+        call getline to read third variable;
 
-        clear stringstream
+        clear stringstream converter;
+        call string num1;
+        convert string num1 to int num1;
+
+        clear stringstream converter;
+        call string num2;
+        convert string num1 to int num2;
+
+        declare sum = num1 + num2;
+
+        for loop (initialize i to 0; i less than sum; increase i by 1){
+            print text;
+        } // end for
+        print new line;
         
-        convert first and second variables to convert into int
-        converter << sNum1 << " " << sNum2;
-
-        converter >> num1 >> num2;
+        clear stringstream converter;
+        clear all strings;
         
-        add num1 and num 2
-
-        create for loop that prints text
-            
-
-    return 0;
+    } // end while
+    
+    close data.csv;
 
 } // end main
 ```
