@@ -27,11 +27,6 @@ int main()
         call getline to read first variable with comma delimiter;
         call getline to read second variable with comma delimiter;
         
-        call getline to read third variable
-
-        call getline to read first variable with comma delimiter
-        call getline to read second variable with comma delimiter
-        
         call getline to read third variable;
 
         clear stringstream converter;
