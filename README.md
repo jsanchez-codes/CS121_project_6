@@ -35,7 +35,7 @@ int main()
 
         clear stringstream converter;
         call string num2;
-        convert string num1 to int num2;
+        convert string num2 to int num2;
 
         declare sum = num1 + num2;
 
